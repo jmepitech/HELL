@@ -17,10 +17,12 @@ enum eAction
 {
 	MA,
 	HR,
-	ACTION_ERROR
+	ACTION_ERROR     
+
+
 };
 
-eState 		gStateTable[7][7];
-eAction		gActionTable[7][7];
+extern eState 		gStateTable[8][8];
+extern eAction		gActionTable[8][8];
 
 #endif
