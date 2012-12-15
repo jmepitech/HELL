@@ -1,5 +1,8 @@
 #ifndef __MACHINE_HPP__
 #define __MACHINE_HPP__
+
+#include <iostream>
+
 enum eState
 {
 	S0,
@@ -18,8 +21,6 @@ enum eAction
 	MA,
 	HR,
 	ACTION_ERROR     
-
-
 };
 
 extern eState 		gStateTable[8][8];
