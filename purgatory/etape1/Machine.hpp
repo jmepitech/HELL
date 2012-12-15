@@ -19,5 +19,5 @@ enum eAction
 	ACTION_ERROR
 };
 
-extern eState 		gStateTable[][];
-extern eAction		gActionTable[][];
+extern eState 		gStateTable[7][7];
+extern eAction		gActionTable[7][7];
