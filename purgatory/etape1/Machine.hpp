@@ -1,4 +1,5 @@
-
+#ifndef __MACHINE_HPP__
+#define __MACHINE_HPP__
 enum eState
 {
 	S0,
@@ -19,5 +20,7 @@ enum eAction
 	ACTION_ERROR
 };
 
-extern eState 		gStateTable[7][7];
-extern eAction		gActionTable[7][7];
+eState 		gStateTable[7][7];
+eAction		gActionTable[7][7];
+
+#endif

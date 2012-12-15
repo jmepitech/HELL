@@ -162,11 +162,10 @@ void	toCompare(char *reference, char *entree)
 
   for (i = 0, pos = 0; entree[i] && reference[pos]; i++)
     {
-      std::cout << entree[i] << std::endl;
+      std::cout << "Token lut ===> < " <<entree[i] << " >"<< std::endl;
       if (entree[i] == reference[pos])
 	{
 	  etat = gStateTable[etat][pos];
-	  action = gActionTable[etat][pos];
 	  if (etat == STATE_ERROR)
 	    {
 	      std::cout << "error" << std::endl;
@@ -175,11 +174,17 @@ void	toCompare(char *reference, char *entree)
 	    }
 	  else
 	    {
-	      std::cout << "passage a l etat suivant" << std::endl;
+	      std::cout << "=== passage a l etat suivant === " << std::endl;
 	      pos++;
 	    }
 	  action = gActionTable[etat][pos];
-	  std::cout << action << std::endl;
+	  std::cout << "L action ::" << action << std::endl;
+	}
+      else
+	{
+	  std::cout << "-----------------" << std::endl;
+	  std::cout << "token non valide" << std::endl;
+	  std::cout << "-----------------" << std::endl;
 	}
     }
 }
