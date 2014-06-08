@@ -3,7 +3,7 @@ class Edge
 {
 	Edge(char c) : c(c) {}
 	
-	~(Edge() {}
+	~Edge() {}
 	
 	bool operator== (const Edge& e)
 	{
